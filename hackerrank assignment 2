@@ -1,0 +1,282 @@
+**  
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+int max=a;
+        if((b>c)&&(b>a)){
+            System.out.println(b);
+        }else if(c>b){
+            System.out.println(c);
+        }else{
+            System.out.println(a);
+        }
+
+    }
+}
+
+**
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+       // System.out.print("Enter month's number: ");
+        int monthNumber;
+        monthNumber = in.nextInt();/*from   ww w .j a v a2 s .com*/
+        switch (monthNumber) {
+        case 1:
+            System.out.println("January");
+            break;
+        case 2:
+            System.out.println("February");
+            break;
+        case 3:
+            System.out.println("March");
+            break;
+        case 4:
+            System.out.println("April");
+            break;
+        case 5:
+            System.out.println("May");
+            break;
+        case 6:
+            System.out.println("June");
+            break;
+        case 7:
+            System.out.println("July");
+            break;
+        case 8:
+            System.out.println("August");
+            break;
+        case 9:
+            System.out.println("September");
+            break;
+        case 10:
+            System.out.println("October");
+            break;
+        case 11:
+            System.out.println("November");
+            break;
+        case 12:
+            System.out.println("December");
+            break;
+        default:
+            System.out.println("Invalid month.");
+            break;
+        }
+    }
+}
+
+**
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int amount=sc.nextInt();
+        int op=sc.nextInt();
+        int c=sc.nextInt();
+        if(op == 1){
+            amount+=c;
+            System.out.println(amount);
+        }else if(c>amount){
+            System.out.println("Insufficient Funds");
+        }
+        else{
+            amount-=c;
+            System.out.println(amount);
+        }
+        }
+}
+
+**
+
+import java.util.Scanner;
+public class maxi{
+    public static void main(String[]arg){
+        Scanner scan = new Scanner(System.in);
+            int A = scan.nextInt();
+            int B = scan.nextInt();
+            int C = scan.nextInt();
+            int D = scan.nextInt();
+            int E = scan.nextInt();
+
+            int total = A + B + C + D + E;
+            int precentage = total / 5;
+
+            String grade;
+
+            if(precentage>=90){
+                grade = "A";
+            }
+            else if(precentage>=80){
+                grade = "B";
+            }
+            else if (precentage>=70){
+                grade = "C";
+            }
+            else if (precentage>=60){
+                grade = "D";
+            }
+            else if(precentage>=40){
+                grade = "E";
+            }
+            else{
+                grade = "F";
+            }
+            
+            System.out.println(precentage);
+            System.out.println(grade);
+        }
+
+    }
+
+**
+
+import java.util.Scanner;
+
+public class DivisibilityChecker {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+
+        if (a % 5 == 0 && a % 11 == 0) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+    }
+}
+
+**
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class NumberSignChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
+        if (number > 0) {
+            System.out.println("1"); // Positive
+        } else if (number < 0) {
+            System.out.println("-1"); // Negative
+        } else {
+            System.out.println("0"); // Neither positive nor negative
+        }
+    }
+}
+
+**
+
+import java.util.Scanner;
+
+public class MaximumElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+
+        int b = scanner.nextInt();
+
+        int max = Math.max(a, b);
+        System.out.println("" + max);
+    }
+}
+
+
+**
+
+import java.util.Scanner;
+
+public class TriangleValidityChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int angleA = scanner.nextInt();
+
+        int angleB = scanner.nextInt();
+
+        int angleC = scanner.nextInt();
+
+        boolean isValid = isTriangleValid(angleA, angleB, angleC);
+
+        if (isValid) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+    }
+
+    public static boolean isTriangleValid(int angleA, int angleB, int angleC) {
+        // Check if all angles are positive and their sum is 180 degrees
+        if (angleA > 0 && angleB > 0 && angleC > 0 && angleA + angleB + angleC == 180) {
+            return true;
+        }
+        return false;
+    }
+}
+
+
+**
+
+import java.util.Scanner;
+
+public class FloorDivision {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+
+        int b = scanner.nextInt();
+
+        int result =(a / b);
+        System.out.println("" + result);
+    }
+}
+
+
+**
+
+import java.util.Scanner;
+
+public class TriangleTypeChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        //System.out.print("Enter side length A: ");
+        int a = scanner.nextInt();
+
+        //System.out.print("Enter side length B: ");
+        int b = scanner.nextInt();
+
+      //  System.out.print("Enter side length C: ");
+        int c = scanner.nextInt();
+
+        if (a == b && b == c) {
+            System.out.println("equilateral");
+        } else if (a != b && b != c && c != a) {
+            System.out.println("scalene");
+        } else {
+            System.out.println("isosceles");
+        }
+    }
+}
